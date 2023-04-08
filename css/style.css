@@ -117,6 +117,20 @@ h1{
         font-size: 40px;
       }
 
+      .sobreMi{
+        margin: 5px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        font-size: 20px;
+        width: 100%;
+        margin-left: -10px;
+
+      }
+
       /* css pages bodas */
 
       .imagenes {
@@ -135,6 +149,15 @@ h1{
       
     
 
+
+
+      /* css pages sobreMi */
+
+      .fondoBody{
+        background-color:burlywood;
+        background-size: cover;
+       
+    }
 
 
 
