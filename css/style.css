@@ -154,9 +154,12 @@ h1{
       /* css pages sobreMi */
 
       .fondoBody{
-        background-color:burlywood;
-        background-size: cover;
-       
+        background-color: white;
+    }
+
+
+    section{
+        margin: 50px;
     }
 
 

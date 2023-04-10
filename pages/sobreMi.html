@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
- </head>
-    <body class="fondoBody">
-        <header>
-            <h1>NF PRODUCCIONES</h1>
-        </header>
-        <nav>
-            <button class="nav-boton" onclick="accion()">Menu</button>
-            <div class="menu">
-              <a href="../index.html" class="nav-enlace desaparece">INICIO</a></li>
-              <a href="bodas.html" class="nav-enlace desaparece">BODAS</a>
-              <a href="xv.html" class="nav-enlace desaparece">XV</a>
-              <a href="egresados.html" class="nav-enlace desaparece">EGRESADOS</a>
-              <a href="book.html" class="nav-enlace desaparece">BOOK</a>
-            </div>
-          </nav>
-        <main>
-            <section>
-                <h2>¿De qué zona soy?</h2>
-                <p>Soy de la zona X, ubicada en el país Y.</p>
-            </section>
-            <section>
-                <h2>¿Cuánto tiempo llevo dedicándome a mi profesión?</h2>
-                <p>Llevo dedicándome a mi profesión Z desde hace X años.</p>
-            </section>
-            <section>
-                <h2>¿Qué tipo de eventos hago?</h2>
-                <p>Me especializo en la organización de eventos de tipo A, B y C. Puedes ver algunos ejemplos de mis trabajos en la sección correspondiente de mi página.</p>
-            </section>
-            <section>
-                <h2>Contrataciones</h2>
-                <p>Si deseas contratarme para tu próximo evento, por favor envía un correo electrónico a <a href="mailto:miemail@dominio.com">miemail@dominio.com</a> o utiliza el formulario de contacto en la sección correspondiente de mi página.</p>
-            </section>
-        </main>
-        <footer>
-            <p>Derechos reservados © 2023</p>
-        </footer>
-    </body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="fondoBody">
+    <header>
+        <h1>NF PRODUCCIONES</h1>
+        <div class="img">
+            <img class="img" src="../images/logo.jpg" alt="" width="100px">
+        </div>
+    </header>
+
+    <nav>
+        <button class="nav-boton" onclick="accion()">Menu</button>
+        <div class="menu">
+            <a href="../index.html" class="nav-enlace desaparece">INICIO</a></li>
+            <a href="bodas.html" class="nav-enlace desaparece">BODAS</a>
+            <a href="xv.html" class="nav-enlace desaparece">XV</a>
+            <a href="egresados.html" class="nav-enlace desaparece">EGRESADOS</a>
+            <a href="book.html" class="nav-enlace desaparece">BOOK</a>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>¿De qué zona soy?</h2>
+            <p>soy de Burzaco, Almirante Brown, provincia de Buenos Aires</p>
+        </section>
+        <section>
+            <h2>¿Cuánto tiempo llevo dedicándome a mi profesión?</h2>
+            <p>Llevo dedicándome a la fotografia hace 8 años</p>
+        </section>
+        <section>
+            <h2>¿Qué tipo de eventos hago?</h2>
+            <p>Hago todo tipo de eventos sociales, podes ver algunos en las secciones de la pagina</p>
+        </section>
+        <section>
+            <h2>Contrataciones</h2>
+            <p>Si deseas contratarme para tu próximo evento, por favor <a href="https://wa.me/1134207815"> haz click
+                    aqui </a></p>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100070298352965" class="icono"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nachofotografia_/" class="icono"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/1134207815" class="icono"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script>
+        function accion() {
+          console.log('esta funcionando mi voton');
+          var ancla = document.getElementsByClassName('nav-enlace');
+          for (var i = 0; i < ancla.length; i++) {
+            ancla[i].classList.toggle('desaparece');
+          }
+        }
+    
+      </script>
+</body>
+
 </html>
